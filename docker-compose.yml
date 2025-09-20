@@ -1,0 +1,23 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./Backend
+    ports:
+      - "3000:3000"
+    networks:
+      - mern-network
+    environment:
+      - MONGO_URL=<YOUR_ATLAS_CONNECTION_STRING>
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "5173:80"
+    networks:
+      - mern-network
+
+networks:
+  mern-network:
+    driver: bridge
