@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault(); 
 
     try {
-      let res = await axios.post("http://localhost:3000/user/login", {
+      let res = await axios.post("https://project-backend-fvbbghe2fphdhzb2.southeastasia-01.azurewebsites.net/user/login", {
         email,
         password,
       });

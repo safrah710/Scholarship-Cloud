@@ -8,7 +8,7 @@ services:
   networks:
     - mern-network
   environment:
-    - MONGO_URL=mongodb+srv://azsafrah:Safrah710.@cluster0.8qfji0b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    - MONGO_URL=mongodb://ace:qiyNkSX0WRkWigkXoQxJ7BJ0fzmGrQ402krHUsnqsqJiK4nfhe1BdRtLl3jfBfU2ILU0KEUWy6kdACDbIzjTCg%3D%3D@ace.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@ace@
   dns:
     - 8.8.8.8
     - 8.8.4.4

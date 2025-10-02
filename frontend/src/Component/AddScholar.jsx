@@ -19,7 +19,7 @@ function Addscholar() {
   const handle_submit = async (e) => {
     e.preventDefault(); 
     try {
-      let res = await axios.post("http://localhost:3000/scholar/add", {
+      let res = await axios.post("https://project-backend-fvbbghe2fphdhzb2.southeastasia-01.azurewebsites.net/scholar/add", {
         scholarshipName,
         shortinfo,
         scholarInfo,

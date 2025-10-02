@@ -13,7 +13,7 @@ function Dashboard() {
   let logout=useLogout();
   const get_scholar = async () => {
     try {
-      let res = await axios.get("http://localhost:3000/scholar/get_scholar");
+      let res = await axios.get("https://project-backend-fvbbghe2fphdhzb2.southeastasia-01.azurewebsites.net/scholar/get_scholar");
       if (res.status === 200) {
         setScholar(res.data.payload);
       }
@@ -24,7 +24,7 @@ function Dashboard() {
 
   const delete_scholar = async (scholarshipName) => {
     try {
-      let res = await axios.delete("http://localhost:3000/scholar/delete", {
+      let res = await axios.delete("https://project-backend-fvbbghe2fphdhzb2.southeastasia-01.azurewebsites.net/scholar/delete", {
         data: { scholarshipName },
       });
       if (res.status === 200) {

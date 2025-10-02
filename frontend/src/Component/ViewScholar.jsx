@@ -13,7 +13,7 @@ const ViewScholar = () => {
   const get_scholar1 = async () => {
     const params = { scholarshipName: str };
     try {
-      let res = await axios.get("http://localhost:3000/scholar/get_details", { params });
+      let res = await axios.get("https://project-backend-fvbbghe2fphdhzb2.southeastasia-01.azurewebsites.net/scholar/get_details", { params });
       if (res.status === 200) {
         console.log(res.data.data);
         setScholar(res.data.data);
