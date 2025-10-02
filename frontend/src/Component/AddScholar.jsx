@@ -17,7 +17,7 @@ function Addscholar() {
   const [date, setDate] = useState("");
 
   const handle_submit = async (e) => {
-    e.preventDefault(); // prevent refresh
+    e.preventDefault(); 
     try {
       let res = await axios.post("http://localhost:3000/scholar/add", {
         scholarshipName,
